@@ -360,12 +360,21 @@
           opacity = 0;
         }
 
+           if (frameNumber >= 5250 && frameNumber < 99999) {
+          context.fillStyle = `rgba(45, 45, 255, ${opacity})`;
+          context.fillText(
+            "happy anniversary, maaz.",
+            canvas.width * 0.2,
+            canvas.height / 2,
+          );
+          opacity = opacity + 0.01;
+        }
         if (frameNumber >= 5250 && frameNumber < 99999) {
           context.fillStyle = `rgba(45, 45, 255, ${opacity})`;
           context.fillText(
-            "happy anniversary, maaz. i love you so much.",
+            "i love you so much.",
             canvas.width * 0.2,
-            canvas.height / 2,
+            canvas.height / 2 + 50,
           );
           opacity = opacity + 0.01;
         }
