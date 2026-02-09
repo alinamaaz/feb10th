@@ -99,101 +99,101 @@
         context.shadowOffsetX = 0;
         context.shadowOffsetY = 0;
 
-        if (frameNumber < 150) {
+        if (frameNumber < 250) {
           context.fillStyle = `rgba(45, 45, 255, ${opacity})`;
           context.fillText("...", cw * 0.2, ch / 2);
           opacity = opacity + 0.01;
         }
         //fades out the text by decreasing the opacity
-        if (frameNumber >= 150 && frameNumber < 300) {
+        if (frameNumber >= 250 && frameNumber < 500) {
           context.fillStyle = `rgba(45, 45, 255, ${opacity})`;
           context.fillText("...", cw * 0.2, ch / 2);
           opacity = opacity - 0.01;
         }
 
         //needs this if statement to reset the opacity before next statement on canvas
-        if (frameNumber == 300) {
+        if (frameNumber == 500) {
           opacity = 0;
         }
-        if (frameNumber > 300 && frameNumber < 450) {
+        if (frameNumber > 500 && frameNumber < 750) {
           context.fillStyle = `rgba(45, 45, 255, ${opacity})`;
 
           context.fillText("maaz?", cw * 0.2, ch / 2);
 
           opacity = opacity + 0.01;
         }
-        if (frameNumber >= 450 && frameNumber < 600) {
+        if (frameNumber >= 750 && frameNumber < 1000) {
           context.fillStyle = `rgba(45, 45, 255, ${opacity})`;
           context.fillText("maaz?", cw * 0.2, ch / 2);
 
           opacity = opacity - 0.01;
         }
 
-        if (frameNumber == 600) {
+        if (frameNumber == 1000) {
           opacity = 0;
         }
 
-        if (frameNumber > 600 && frameNumber < 750) {
+        if (frameNumber > 1000 && frameNumber < 1250) {
           context.fillStyle = `rgba(45, 45, 255, ${opacity})`;
           context.fillText("where are we?", cw * 0.2, ch / 2);
           opacity = opacity + 0.01;
         }
-        if (frameNumber >= 750 && frameNumber < 900) {
+        if (frameNumber >= 1250 && frameNumber < 1500) {
           context.fillStyle = `rgba(45, 45, 255, ${opacity})`;
           context.fillText("where are we?", cw * 0.2, ch / 2);
           opacity = opacity - 0.01;
         }
 
-        if (frameNumber == 900) {
+        if (frameNumber == 1500) {
           opacity = 0;
         }
-        if (frameNumber > 900 && frameNumber < 1050) {
+        if (frameNumber > 1500 && frameNumber < 1750) {
           context.fillStyle = `rgba(45, 45, 255, ${opacity})`;
           context.fillText("wait, really?", cw * 0.2, ch / 2);
           opacity = opacity + 0.01;
         }
-        if (frameNumber >= 1050 && frameNumber < 1200) {
+        if (frameNumber >= 1750 && frameNumber < 2000) {
           context.fillStyle = `rgba(45, 45, 255, ${opacity})`;
           context.fillText("wait, really?", cw * 0.2, ch / 2);
           opacity = opacity - 0.01;
         }
 
-        if (frameNumber == 1200) {
+        if (frameNumber == 2000) {
           opacity = 0;
         }
 
-        if (frameNumber > 1200 && frameNumber < 1500) {
+        if (frameNumber > 2000 && frameNumber < 2500) {
           context.fillStyle = `rgba(45, 45, 255, ${opacity})`;
           context.fillText("whoa", cw * 0.2, ch / 2);
 
           opacity = opacity + 0.01;
         }
-        if (frameNumber > 1350 && frameNumber < 1500) {
+        if (frameNumber > 2250 && frameNumber < 2500) {
           context.fillStyle = `rgba(45, 45, 255, ${secondOpacity})`;
           context.fillText("so this is blanket world", cw * 0.2, ch / 2 + 50);
 
           secondOpacity = secondOpacity + 0.01;
         }
-        if (frameNumber >= 1500 && frameNumber < 1650) {
+        if (frameNumber >= 2500 && frameNumber < 2750) {
           opacity = secondOpacity;
           context.fillStyle = `rgba(45, 45, 255, ${opacity})`;
           context.fillText("whoa", cw * 0.2, ch / 2);
 
           opacity = opacity - 0.01;
         }
-        if (frameNumber >= 1500 && frameNumber < 1650) {
+        if (frameNumber >= 2500 && frameNumber < 2750) {
           context.fillStyle = `rgba(45, 45, 255, ${secondOpacity})`;
           context.fillText("so this is blanket world", cw * 0.2, ch / 2 + 50);
 
           secondOpacity = secondOpacity - 0.01;
         }
 
-        if (frameNumber == 1650) {
+        if (frameNumber == 2750) {
           opacity = 0;
           secondOpacity = 0;
         }
 
-        if (frameNumber > 1650 && frameNumber < 1800) {
+        if (frameNumber > 2750 && frameNumber < 3000) {
           context.fillStyle = `rgba(45, 45, 255, ${opacity})`;
           context.fillText(
             "hey...it's a little cold, isn't it?",
@@ -202,7 +202,7 @@
           );
           opacity = opacity + 0.01;
         }
-        if (frameNumber >= 1800 && frameNumber < 1950) {
+        if (frameNumber >= 3000 && frameNumber < 3250) {
           context.fillStyle = `rgba(45, 45, 255, ${opacity})`;
           context.fillText(
             "hey...it's a little cold, isn't it?",
@@ -212,60 +212,60 @@
           opacity = opacity - 0.01;
         }
 
-        if (frameNumber == 1950) {
+        if (frameNumber == 3250) {
           opacity = 0;
         }
 
-        if (frameNumber > 1950 && frameNumber < 2250) {
+        if (frameNumber > 3250 && frameNumber < 3750) {
           context.fillStyle = `rgba(45, 45, 255, ${opacity})`;
           context.fillText("that's better", cw * 0.2, ch / 2);
           opacity = opacity + 0.01;
         }
-        if (frameNumber > 2100 && frameNumber < 2250) {
+        if (frameNumber > 3500 && frameNumber < 3750) {
           context.fillStyle = `rgba(45, 45, 255, ${secondOpacity})`;
           context.fillText("you feel so nice and warm.", cw * 0.2, ch / 2 + 50);
           secondOpacity = secondOpacity + 0.01;
         }
-        if (frameNumber >= 2250 && frameNumber < 2400) {
+        if (frameNumber >= 3750 && frameNumber < 4000) {
           opacity = secondOpacity;
           context.fillStyle = `rgba(45, 45, 255, ${opacity})`;
           context.fillText("that's better", cw * 0.2, ch / 2);
           opacity = opacity - 0.01;
         }
-        if (frameNumber >= 2250 && frameNumber < 2400) {
+        if (frameNumber >= 3750 && frameNumber < 4000) {
           context.fillStyle = `rgba(45, 45, 255, ${secondOpacity})`;
           context.fillText("you feel so nice and warm.", cw * 0.2, ch / 2 + 50);
           secondOpacity = secondOpacity - 0.01;
         }
 
-        if (frameNumber == 2400) {
+        if (frameNumber == 4000) {
           opacity = 0;
           secondOpacity = 0;
         }
 
-        if (frameNumber > 2400 && frameNumber < 2550) {
+        if (frameNumber > 4000 && frameNumber < 4250) {
           context.fillStyle = `rgba(45, 45, 255, ${opacity})`;
           context.fillText("it's so lovely here.", cw * 0.2, ch / 2);
           opacity = opacity + 0.01;
         }
-        if (frameNumber >= 2550 && frameNumber < 2700) {
+        if (frameNumber >= 4250 && frameNumber < 4500) {
           context.fillStyle = `rgba(45, 45, 255, ${opacity})`;
           context.fillText("it's so lovely here.", cw * 0.2, ch / 2);
           opacity = opacity - 0.01;
         }
 
         //////////////////////////////////////////////////////////////////////////////////
-        if (frameNumber == 2700) {
+        if (frameNumber == 4500) {
           opacity = 0;
         }
 
         //////////////////////////////////////////////////////////////////////////////////
-        if (frameNumber > 2700 && frameNumber < 3000) {
+        if (frameNumber > 4500 && frameNumber < 5000) {
           context.fillStyle = `rgba(45, 45, 255, ${opacity})`;
           context.fillText("just you and me", cw * 0.2, ch / 2);
           opacity = opacity + 0.01;
         }
-        if (frameNumber >= 3000 && frameNumber < 3150) {
+        if (frameNumber >= 5000 && frameNumber < 5250) {
           opacity = secondOpacity;
           context.fillStyle = `rgba(45, 45, 255, ${opacity})`;
           context.fillText("just you and me", cw * 0.2, ch / 2);
@@ -274,13 +274,13 @@
 
         //////////////////////////////////////////////////////////////////////////////////
 
-        if (frameNumber > 2850 && frameNumber < 3000) {
+        if (frameNumber > 4750 && frameNumber < 5000) {
           context.fillStyle = `rgba(45, 45, 255, ${secondOpacity})`;
           context.fillText("in our own little world.", cw * 0.2, ch / 2 + 50);
           secondOpacity = secondOpacity + 0.01;
         }
 
-        if (frameNumber >= 3000 && frameNumber < 3150) {
+        if (frameNumber >= 5000 && frameNumber < 5250) {
           context.fillStyle = `rgba(45, 45, 255, ${secondOpacity})`;
           context.fillText("in our own little world.", cw * 0.2, ch / 2 + 50);
           secondOpacity = secondOpacity - 0.01;
@@ -288,16 +288,16 @@
 
         /////////////////////////////////////////////////////////////////////////////////
 
-        if (frameNumber == 3150) {
+        if (frameNumber == 5250) {
           opacity = 0;
         }
 
-        if (frameNumber >= 3150 && frameNumber < 99999) {
+        if (frameNumber >= 5250 && frameNumber < 99999) {
           context.fillStyle = `rgba(45, 45, 255, ${opacity})`;
           context.fillText("happy anniversary, maaz.", cw * 0.2, ch / 2);
           opacity = opacity + 0.01;
         }
-        if (frameNumber >= 3150 && frameNumber < 99999) {
+        if (frameNumber >= 5250 && frameNumber < 99999) {
           context.fillStyle = `rgba(45, 45, 255, ${opacity})`;
           context.fillText("i love you so much.", cw * 0.2, ch / 2 + 50);
           opacity = opacity + 0.01;
@@ -323,3 +323,4 @@
     </script>
   </body>
 </html>
+
